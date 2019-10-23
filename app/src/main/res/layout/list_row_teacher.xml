@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:elevation="@dimen/dp_10"
+        android:foreground="?attr/selectableItemBackground">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/relative_teacher_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/red">
+
+                <TextView
+                    android:id="@+id/txt_teacher_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/dp_5"
+                    android:layout_toLeftOf="@+id/chk_teacher"
+                    android:text="Chitale Dairy"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_16sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/chk_teacher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/dp_5"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_2"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14sp" />
+
+                <TextView
+                    android:id="@+id/txt_school_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txt_teacher_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white" />
+
+</LinearLayout>

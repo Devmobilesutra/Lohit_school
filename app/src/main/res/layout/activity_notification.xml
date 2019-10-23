@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_notification"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/daily_updates_secondary">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/custom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material" />
+
+    <LinearLayout
+        android:id="@+id/linear_heading"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/daily_updates_background"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/updates_notices_mix"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_20sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/txt_current_date_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_2"
+            android:gravity="center"
+            android:text="Monday 27 March 2017, 9.00 AM"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_18sp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/action_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_5"
+        android:visibility="gone"
+        android:layout_below="@+id/linear_heading"
+        android:background="@color/white" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_notification"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_above="@+id/action_divider_bottom"
+        android:layout_below="@+id/action_divider"
+        android:padding="@dimen/dp_5" />
+
+    <TextView
+        android:id="@+id/txt_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/action_divider_bottom"
+        android:layout_below="@+id/action_divider"
+        android:gravity="center"
+        android:text="@string/empty_updates"
+        android:textColor="@color/daily_updates_background"
+        android:textSize="@dimen/text_24sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/action_divider_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_5"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white" />
+
+</RelativeLayout>

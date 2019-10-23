@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AED581"
+    tools:context="com.mobilesutra.SMS_Lohit.activities.Activity_Terms_Policy">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/custom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:minHeight="@dimen/toolbar_height" />
+
+    <LinearLayout
+        android:id="@+id/linear_heading"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/teacher_details_background"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/terms_privacy"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_20sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/txt_current_date_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_2"
+            android:gravity="center"
+            android:text="Monday 27 March 2017, 9.00 AM"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_18sp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/action_divide"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_5"
+        android:layout_below="@+id/linear_heading"
+        android:background="@color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_above="@+id/action_divider_bottom"
+        android:layout_below="@+id/action_divide">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_5">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="\t\tThis app is authorized to be used by teachers and staff of Lohit district administration."
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="\t\tThe Lohit Administration, Govt. of Arunachal Pradesh, reserves all the copyrights of this Mobile App. Unauthorized modification or repacking of this application is illegal and thus no modified copies of the app shall be distributed without permission of the Lohit District Administration."
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_17sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <TextView
+                android:text="About App :- "
+                android:textStyle="bold"
+                android:textSize="@dimen/text_18sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lohit district in Arunachal Pradesh has a good number of schools located all over its territory. Many of them cover remote villages and are the first port of call for villagers who are otherwise bereft of these basic facilities."
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/dp_5"
+                android:textSize="@dimen/text_16sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/txt_para1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="@string/terms_para2"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="Mobile App :"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_5"
+                android:text="It is compatible with any basic android mobile and can be used for :- "
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_2"
+                android:text="\u25CF Day to day attendance of the entire staff incorporating GPS Coordinates of their work place."
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_2"
+                android:text="\u25CF Day-to-day Attendance of Children at School / Midday meals / Examinations."
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_2"
+                android:text="\u25CF Customised reporting from interior locations by individuals of their respective routine activities / tasks"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_2"
+                android:text="\u25CF Instant reporting of any disasters or events with additional notes and photographs."
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_2"
+                android:text="\u25CF Option for admin and other head of departments located at head quarters to broadcast notifications to a specific institution, group of institutions or all the institutions."
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_2"
+                android:text="\u25CF Individuals can apply for leaves online and send a scanned copy of the application."
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_2"
+                android:text="\t\tThe above data is primarily sent using easily available mobile data service. In absence of data service, the basic functionalities can be still sent to the central Web server through SMS. This ensures that the central data is updated with basic details on daily basis."
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="Web Admin Panel :"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_2"
+                android:text="\t\tThe Web admin panel collates all the above information on real-time basis and then generate reports for routine administration which can be accessed through MIS and utilized for resource planning at district and block levels."
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_2"
+                android:text="\t\tThis mobile based app is an initiative of the Deputy Commissioner Lohit to converge the administrative functioning of crucial departments like education. The overall aim promote efficiency in district administration through transparent flow of information."
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_above="@+id/action_divider_bottom"
+        android:layout_below="@+id/action_divide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <View
+        android:id="@+id/action_divider_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_5"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white" />
+
+</RelativeLayout>

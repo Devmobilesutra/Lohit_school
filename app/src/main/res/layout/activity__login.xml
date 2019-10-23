@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wakro"
+    tools:context="com.mobilesutra.SMS_Lohit.activities.Activity_Login">
+
+    <!--<ImageView
+        android:id="@+id/img_logo_dairy"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/logo_height_new"
+        android:layout_marginTop="@dimen/dp_16"
+        android:src="@drawable/chitalelogo" />-->
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_16"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_logo"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/dp_16"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:text="Login"
+            android:visibility="gone"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_20sp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/edit_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_25"
+            android:layout_marginRight="@dimen/dp_25"
+            android:layout_marginTop="@dimen/dp_25"
+            android:hint="USER NAME (यूज़रनेम)"
+            android:text=""
+            android:inputType="text"
+            android:padding="@dimen/dp_15"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/text_16sp" />
+
+
+        <EditText
+            android:id="@+id/edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_25"
+            android:layout_marginRight="@dimen/dp_25"
+            android:layout_marginTop="@dimen/dp_20"
+            android:hint="PASSWORD (पासवर्ड)"
+            android:text=""
+            android:inputType="textPassword"
+            android:padding="@dimen/dp_15"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/text_16sp" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_25"
+            android:layout_marginRight="@dimen/dp_25"
+            android:layout_marginTop="@dimen/dp_35"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10"
+            android:background="@drawable/btn_capsul_background"
+            android:gravity="center"
+            android:text="LOGIN"
+            android:textColor="@color/login_back_color"
+            android:textSize="@dimen/text_20sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/txt_forget_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_25"
+            android:layout_marginRight="@dimen/dp_25"
+            android:layout_marginTop="@dimen/dp_25"
+            android:layout_marginBottom="@dimen/dp_25"
+            android:text="RESET PASSWORD"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_18sp"
+            android:textStyle="normal" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/login_bottom_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

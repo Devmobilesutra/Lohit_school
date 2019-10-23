@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#dd1f22</color>
+    <color name="colorPrimaryDark">#B71C1C</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="app_back_color">#303F18</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#dd1f22</color>
+    <color name="black">#000000</color>
+    <color name="material_gray">#687982</color>
+    <color name="light_gray">#E0E0E0</color>
+    <color name="dark_blue">#01579B</color>
+    <color name="login_back_color">#29A8DB</color>
+    <color name="teacher_details_background">#9BBD11</color>
+    <color name="text_color">#9CAEBF</color>
+    <color name="student_attendance_background">#F57C00</color>
+    <color name="student_attendance_secondary">#FFB74D</color>
+    <color name="mid_day_meal_background">#689F38</color>
+    <color name="mid_day_meal_secondary">#AED581</color>
+    <color name="teacher_attendance_background">#0097A7</color>
+    <color name="teacher_attendance_secondary">#4DD0E1</color>
+   <!-- <color name="examination_attendance_background">#C2185B</color>
+    <color name="examination_attendance_secondary">#F06292</color>-->
+    <color name="examination_attendance_background">#455A64</color>
+    <color name="examination_attendance_secondary">#90A4AE</color>
+    <color name="daily_updates_background">#1976D2</color>
+    <color name="daily_updates_secondary">#64B5F6</color>
+    <color name="hint_text_color">#73828e</color>
+    <color name="leave_application_background">#d32f2f</color>
+    <color name="leave_application_secondary">#e57373</color>
+    <color name="upload_event_background">#fbc02d</color>
+    <color name="upload_event_secondary">#fdd835</color>
+</resources>

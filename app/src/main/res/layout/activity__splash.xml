@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_background"
+    tools:context="com.mobilesutra.SMS_Lohit.activities.Activity_Splash">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_ap_logo"
+        android:src="@drawable/ap_logo"
+        android:layout_gravity="center"
+        android:layout_width="260dp"
+        android:layout_height="160dp" />
+
+    <TextView
+        android:layout_below="@+id/img_ap_logo"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Department of Education\n(शिक्षण मंडल)"
+        android:layout_marginTop="@dimen/dp_5"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>

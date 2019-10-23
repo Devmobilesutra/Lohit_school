@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AED581"
+    tools:context="com.mobilesutra.SMS_Lohit.activities.Activity_Acknowledgment">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/custom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:minHeight="@dimen/toolbar_height" />
+
+    <LinearLayout
+        android:id="@+id/linear_heading"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/teacher_details_background"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/acknowledgment"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_20sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/txt_current_date_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_2"
+            android:gravity="center"
+            android:text="Monday 27 March 2017, 9.00 AM"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_18sp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/action_divide"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_5"
+        android:layout_below="@+id/linear_heading"
+        android:background="@color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/action_divider_bottom"
+        android:layout_below="@+id/action_divide">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dp_5">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="\n    This app “DASH Lohit” was developed with  the vision, sincere efforts and contributions of
+                 \n\n • 	Mr  Danish Ashraf ( Deputy Commissioner Lohit , Lohit District Arunachal Pradesh)
+                 \n\n    And with Proactive contributions by :-
+                 \n\n •	 Ms Une Pertin (CO Development, Lohit District Arunachal Pradesh)
+                 \n\n •	 Mrs Mana Lingi (Dy Director School Education Lohit District Arunachal Pradesh)
+                 \n\n •	 Dr Mrs Chai Pul (District Medical Officer - Lohit District Arunachal Pradesh)
+                 \n\n •	 Dr Nayil Sotutlum (DRCHO. Dist reproductive &#038; Child Health Officer &#038; CEO of Dist Health Society)
+                 \n\n •	 Mr June Kadu (District Information Officer - Lohit District Arunachal Pradesh)"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16sp"
+                android:autoLink="all"
+                android:textColorLink="@color/white"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <View
+        android:id="@+id/action_divider_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_5"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white" />
+
+</RelativeLayout>

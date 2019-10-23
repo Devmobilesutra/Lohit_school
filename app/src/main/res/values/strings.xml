@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">DASH-School</string>
+    <string name="Login_validations">Please enter username and password</string>
+    <string name="Ok">Ok</string>
+    <string name="Gcm_error_response">Unable to get GCM id to send notifications. Please try again.</string>
+    <string name="no_internet_message">No internet connection. Please check your internet connection.</string>
+    <string name="gps_setting">To continue, let your device turn on location.</string>
+    <string name="empty_updates">No Updates or Notices available</string>
+
+    <string name="acknowledgment">Acknowledgment</string>
+    <string name="terms_privacy"><![CDATA[Terms of Use & Privacy Policy]]></string>
+    <string name="visit_developer">Visit Developer</string>
+
+    <string name="updates_notices">Updates &#038; Notices</string>
+    <string name="updates_notices_hindi">(अपडेट्स और समीक्षा)</string>
+    <string name="updates_notices_mix">Updates &#038; Notices (अपडेट्स और समीक्षा)</string>
+    <string name="upload_events">Upload Events</string>
+    <string name="upload_events_hindi">(अपलोड क्रिया-कलाप)</string>
+    <string name="upload_events_mix">Upload Events (अपलोड क्रिया-कलाप)</string>
+    <string name="leave_application">Leave Application</string>
+    <string name="leave_application_mix">Leave Application (छुट्टी अर्जी)</string>
+    <string name="send_teacher_attendance">Send Teacher Attendance</string>
+    <string name="text_teacher_attendance">Teacher\'s Attendance</string>
+    <string name="text_teacher_attendance_hindi">(अध्यापक उपस्थिति)</string>
+    <string name="text_staff_attendance">Staff Attendance</string>
+    <string name="text_staff_attendance_hindi">(कर्मचारी उपस्थिति)</string>
+    <string name="text_staff_attendance_mix">Staff Attendance (कर्मचारी उपस्थिति)</string>
+    <string name="terms_para2"><![CDATA[<b>“DASH Lohit”</b> is Lohit District’s assessment of Schools system on Mobile platform for day to day monitoring and information management. The system utilizes the cellular network to link these remote schools in Lohit District. It comprises of App for Schools and a central Web server integrates the real-time data received from the field.]]></string>
+    <string name="reset_password">Reset Password</string>
+    <string name="text_teacher_attendance_mix">Teacher\'s Attendance (अध्यापक उपस्थिति)</string>
+</resources>

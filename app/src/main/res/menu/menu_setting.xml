@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/acknowledgment"
+        android:title="@string/acknowledgment"/>
+
+    <item android:id="@+id/terms_privacy"
+        android:title="@string/terms_privacy"/>
+
+    <item android:id="@+id/developer"
+        android:title="@string/visit_developer"/>
+
+    <item android:id="@+id/send_teacher_attendance"
+        android:visible="false"
+        android:title="@string/send_teacher_attendance"/>
+
+    <item android:id="@+id/reset_password"
+        android:visible="true"
+        android:title="@string/reset_password"/>
+
+</menu>

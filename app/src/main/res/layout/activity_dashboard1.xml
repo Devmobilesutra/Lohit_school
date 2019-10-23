@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@color/teacher_details_background"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <!--<TextView
+                android:textSize="@dimen/text_24sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="Good Morning!"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />-->
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/school_img1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_school_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="GOVT.PRY.SCHOOL, KANJANG"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_teacher_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp_20"
+                android:text="Mr. Ganesh Borse"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_teacher_designation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp_20"
+                android:text="HeadMaster"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_16sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/txt_current_date_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:paddingLeft="@dimen/dp_20"
+                android:text="Monday 27 March 2017, 9.00 AM"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_18sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp_20">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Monday 27 March 2017, 9.00 AM"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_18sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_staff"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:src="@drawable/staff_attendance" />
+
+        <LinearLayout
+            android:id="@+id/linear_teacher_attendance"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_teacher_attendance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:text="Teacher Attendance"
+                android:textColor="@android:color/tab_indicator_text"
+                android:textSize="@dimen/text_24sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/txt_teacher_attendance_hindi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:text="(कर्मचारी उपस्थिति)"
+                android:textColor="@android:color/tab_indicator_text"
+                android:textSize="@dimen/text_18sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/material_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_student"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:src="@drawable/student" />
+
+        <!--<TextView
+            android:id="@+id/txt_student_attendance"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:gravity="center_vertical"
+            android:text="Students Attendance"
+            android:textSize="@dimen/text_24sp"
+            android:textStyle="normal" />-->
+
+        <LinearLayout
+            android:id="@+id/linear_students_attendance"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_student_attendance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:text="Student Attendance"
+                android:textColor="@android:color/tab_indicator_text"
+                android:textSize="@dimen/text_24sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/txt_students_attendance_hindi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:text="(छात्र उपस्थिति)"
+                android:textColor="@android:color/tab_indicator_text"
+                android:textSize="@dimen/text_18sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/material_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_meal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:src="@drawable/meal" />
+
+        <TextView
+            android:id="@+id/txt_meal_report"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:gravity="center_vertical"
+            android:text="Mid Day Meal Report"
+            android:textSize="@dimen/text_24sp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/material_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_examination"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:src="@drawable/examination_attendance" />
+
+        <TextView
+            android:id="@+id/txt_examination_attendance"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:gravity="center_vertical"
+            android:text="Examination Attendance"
+            android:textSize="@dimen/text_24sp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/material_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_alerts"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:src="@drawable/alert" />
+
+        <TextView
+            android:id="@+id/txt_updates"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:gravity="center_vertical"
+            android:text="Updates &#038; Notices"
+            android:textSize="@dimen/text_24sp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+</LinearLayout>
